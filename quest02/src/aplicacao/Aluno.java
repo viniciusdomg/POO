@@ -44,7 +44,7 @@ public class Aluno {
 			nota3 = valorNovo;
 			return "Nota alterada com sucesso";
 		}else {
-			return "Digitou um codigo de nota inexistente";
+			return "Digitou um codigo de nota inexistente (Digite de 1 a 3)";
 		}
 	}
 	
@@ -53,7 +53,7 @@ public class Aluno {
 		return media;
 	}
 	public void calcularMedia() {
-		media = (nota1+nota2+nota3)/3;
+		media = ((nota1*4)+(nota2*5)+(nota3*6))/(4+5+6);
 	}
 	
 	public void setMatricula(int matricula) {
