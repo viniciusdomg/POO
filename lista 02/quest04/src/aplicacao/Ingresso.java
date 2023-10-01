@@ -33,8 +33,12 @@ public class Ingresso {
 		this.name = name;
 	}
 	
-	public float getValue() {
-		return value;
+	public String getValue() {
+		if(value==8) {
+			return "Meia";
+		}else {
+			return "Inteira";
+		}
 	}
 	public void setValue(String choose) {
 		if(choose.equals("Meia")) {
